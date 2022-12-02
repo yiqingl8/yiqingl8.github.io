@@ -1,0 +1,20 @@
+{
+  "data": {
+    "url": "https://raw.githubusercontent.com/TianciZheng/TianciZheng.github.io/main/cleaned_inc5000-2019.csv"
+  },
+  "mark": "bar",
+  "height": "600",
+  "width": "500",
+  "title": "Total revenue by industry in 2019",
+  "encoding": {
+    "y": {"field": "industry", "type": "ordinal", "sort": "-x", "title": "Industry Category"},
+    "x": {
+      "aggregate": "sum",
+      "field": "revenue_in_million",
+      "type": "quantitative",
+      "title": "Gross Revenue (in million)"
+    },
+    "color": {"field": "industry"}
+  },
+  "config": {}
+}

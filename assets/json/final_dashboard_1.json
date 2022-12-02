@@ -1,0 +1,41 @@
+{
+  "config": {"view": {"continuousWidth": 600, "continuousHeight": 550}},
+  "hconcat": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {"aggregate": "count", "type": "quantitative"},
+        "x": {"field": "industry", "type": "ordinal","title": "Industry"},
+        "y": {"field": "state", "type": "ordinal", "title": "State"}
+      },
+      "height": 600,
+      "selection": {
+        "selector002": {"type": "interval", "encodings": ["x", "y"]}
+      },
+      "width": 550
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "sort": "-y",
+          "field": "yrs_on_list",
+          "type": "ordinal",
+          "title": "Years on List"
+        },
+        "y": {
+          "aggregate": "average",
+          "field": "revenue_in_million",
+          "axis": {"title": "Average Revenue in Million"},
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": {"selection": "selector002"}}],
+      "width": 550
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/TianciZheng/TianciZheng.github.io/main/cleaned_inc5000-2019.csv",
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+  }
+}

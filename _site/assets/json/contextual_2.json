@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average Employee Counts",
+  "data": {
+    "url": "https://raw.githubusercontent.com/TianciZheng/TianciZheng.github.io/main/cleaned_inc5000-2019.csv"
+  },
+  "height": 400,
+  "width": 500,
+  "transform": [{"filter": "datum.founded >= 1989"}],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "founded", "type": "ordinal","title":"Founded Year"},
+    "y": {"field": "workers", "aggregate": "average", "type": "quantitative","title":"Average Employee Count"},
+    "color": {"value": "purple"}
+  },
+  "config": {}
+}
