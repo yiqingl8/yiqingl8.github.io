@@ -1,5 +1,6 @@
 {
   "config": {"view": {"continuousWidth": 600, "continuousHeight": 550}},
+  "title": "Central Interactive Dashboard",
   "hconcat": [
     {
       "mark": "rect",

@@ -52,7 +52,7 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>Tianci Zheng</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Yiqing Li</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
@@ -83,15 +83,15 @@
 <h2 id="1-introduction">1. Introduction</h2>
 <p>“How to succeed” is always the most frequent question every company asks. And we want to help companies answer this question by learning from successful ones. So, we decided to utilize Inc.5000 in 2019, which listed the 5000 Fastest Growing Private Companies in the United States at that year, to figure out the hidden stories based on their data. We hope that our analysis could help people better understand the key factors as well as the common elements a successful company possesses.</p>
 
-<p>The data file comes from <a href="https://data.world/aurielle/inc-5000-2019">INC 5000 - 2019</a> on data.world which is orignially from Inc.com.
-We performed a series of data processing and cleaning that can be found in our “Analysis” Jupyter Notebook.</p>
+<p>The <a href="https://raw.githubusercontent.com/yiqingl8/yiqingl8.github.io/main/cleaned_inc5000-2019.csv">data file</a> comes from <a href="https://data.world/aurielle/inc-5000-2019">INC 5000 - 2019</a> on data.world which is orignially from Inc.com.
+We performed a series of data processing and cleaning that can be found in our <a href="https://github.com/yiqingl8/yiqingl8.github.io/blob/main/python_notebooks/finalprojectpart3_Analysis_Group%2066.ipynb">Analysis</a> Jupyter Notebook.</p>
 
 <h2 id="2-one-central-interactive-dashboard-visualization">2. One Central Interactive Dashboard Visualization</h2>
 
-<p>Firstly, we would like to create an interactive dashboard (Fig 1) that reveals precious geographic and monetary information regarding those fastest 5000 companies.</p>
+<p>Firstly, we would like to create an <a href="https://raw.githubusercontent.com/yiqingl8/yiqingl8.github.io/main/assets/json/centraldashboard.json">interactive dashboard</a> (Fig 1) that reveals precious geographic and monetary information regarding those fastest 5000 companies.</p>
 
 <vegachart schema-url="/assets/json/centraldashboard.json" style="width: 100%"></vegachart>
-<center>Fig 1: Central Interactive Dashboard</center>
+<center>Fig 1: Central Interactive Dashboard </center>
 <p><br /></p>
 
 <p>There are two components in our dashboard. The left part is a heatmap visualization that plots out the company industries and the states they reside. The different color shows the different amount of companies in each combination. 
@@ -107,26 +107,34 @@ The chart horizontally shows the business types per state and their count. And l
 
 <h3 id="31-total-revenue-by-industry">3.1 Total revenue by industry</h3>
 
-<p>One direction we focused on was revenue. By calculating the total revenue based on the industry, we could find the top sectors that make the most money. 
+<p>One direction we focused on was revenue. Revenue is always an important measure to a company and can reflect many facets, such as operations and financial status. We created a <a href="https://raw.githubusercontent.com/yiqingl8/yiqingl8.github.io/main/assets/json/contextual_1.json">horizontal bar</a>(Fig 2) chart by calculating the total revenue based on the industry to find the top sectors that make the most money. 
 As shown in Fig 2, we can see that Health, Consumer Products &amp; Services, and Construction were the industries with the highest revenue in 2019. And the Health section even made above 38,000 million, which was twice as much as second place. The graph shows us which industries are promising and which ones are not. 
 It provides a very good reference for people and entrepreneurs to determine the future direction of their companies.</p>
-
-<p>In this section, we found a treemap visualization created by Gautam Anand<sup>(1)<sup> and</sup></sup></p>
 
 <vegachart schema-url="/assets/json/contextual_1.json" style="width: 100%"></vegachart>
 <center>Fig 2: Total Revenue by Industry in 2019</center>
 <p><br /></p>
 
+<p>Meanwhile, we found a treemap visualization (Fig 3)，created by Gautam Anand <sup>(1)</sup>，that 
+also represents industry segments and their revenue. The chart’s data are from Inc 5000 list in 2014. 
+Based on the graph, we can tell that the Health, Energy, and IT Services industries earned the most in 2014, and their gross revenue was around 20,000 million. Other remarkable industries include Business Products &amp; Services, Financial Services, Construction, and Real Estate. Additionally, we can discover the industry and economic trends and changes in the last few years by comparing Fig 3 with Fig 2. Health is always the leading role among all other sectors, and it outperformed others significantly in 2019. IT and Energy are seriously declining as they went from the top five to below the tenth. Overall, the growth of many industries is not stable, and people should be cautious when determining the industry.</p>
+
 <p><img src="/assets/pngs/industryandrevenue.png" alt="" /></p>
 <center>Fig 3: Total Revenue by Industry in 2014</center>
 <p><br /></p>
 
-<h3 id="32-average-employee">3.2 Average Employee</h3>
+<h3 id="32-average-employee-count">3.2 Average Employee Count</h3>
+
+<p>Another aspect we worked on was the employee. 
+We have seen much news regarding layoffs in famous companies these days, and we think it is necessary to help people learn from fast-growing companies about their strategies in employment. Analyzing the trend of employee count can achieve the purpose.
+So, We created another <a href="https://raw.githubusercontent.com/yiqingl8/yiqingl8.github.io/main/assets/json/contextual_2.json">line chart</a> (Fig 4) to show the average number of employees for companies founded at different times. 
+According to the above figure, there is a declining trend which is reasonable as newly established companies tend to have fewer employers. An interesting finding is that most companies have a total number of employees between 100 and 400. We believe this range reflects the number of employees a healthy growing company should maintain. Therefore, people can rely on this interval to judge if they need to control the employee size or continue hiring for faster development.</p>
+
 <center><vegachart schema-url="/assets/json/contextual_2.json" style="width: 100%"></vegachart></center>
 <center>Fig 4: Average Employee Amount for Companies founded within 30 years </center>
 
 <h2 id="4conclusion">4.Conclusion</h2>
-<p>Test</p>
+<p>To conclude, our project utilizes the dashboard to show the distribution of different industries in different states and their financial performances. We also plotted gross revenue and employment trend, aiming to give better insights into the most successful growth companies in the United States. We hope our work can benefit entrepreneurs who would like to learn from others and better develop their companies.</p>
 
 <h2 id="5-citation">5. Citation</h2>
 <ol>
@@ -134,17 +142,16 @@ It provides a very good reference for people and entrepreneurs to determine the 
 </ol>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/TianciZheng/TianciZheng.github.io/main/cleaned_inc5000-2019.csv">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/yiqingl8/yiqingl8.github.io/main/cleaned_inc5000-2019.csv">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/yiqingl8/yiqingl8.github.io/blob/b07ddd594ef1a68bb1816462c4cbdd5d63a34d3c/python_notebooks/finalprojectpart3_Analysis_Group%2066.ipynb">
   The Analysis
 </a>
 </div>
-
 
 </div>
   </main>
@@ -152,15 +159,15 @@ It provides a very good reference for people and entrepreneurs to determine the 
 
   <small class="text-muted mb-2">
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>Tianci Zheng</strong>
+    by <strong>Yiqing Li</strong>
   </small>
 
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:tianci2@illinois.edu"
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:yiqingl8@illinois.edu"
        style="color: #6c757d"
        onMouseOver="this.style.color='#db4437'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/TianciZheng"
+    </a><a class="social mx-1"  href="https://www.github.com/yiqingl8"
        style="color: #6c757d"
        onMouseOver="this.style.color='#333333'"
        onMouseOut="this.style.color='#6c757d'">

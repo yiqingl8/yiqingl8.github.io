@@ -5,11 +5,11 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : Tianci Zheng
+title               : Yiqing Li
 description         : Welcome
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
-repository          : TianciZheng               # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : yiqingl8               # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
@@ -33,13 +33,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Tianci Zheng
+  name              : Yiqing Li
   image             : https://github.com/TianciZheng/TianciZheng.github.io/blob/main/viewbeach.jpg?raw=true
 # behance           : your_username
 # dribbble          : your_username
-  email             : tianci2@illinois.edu
+  email             : yiqingl8@illinois.edu
 # facebook          : your_username
-  github            : TianciZheng # JPN
+  github            : yiqingl8 # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username

@@ -7,8 +7,7 @@ weight: 3
 
 # **About Me**
 
-Hi I am Tianci Zheng,<br>
+Hi I am Yiqing Li,<br>
 
 - MSIM at UIUC
-- Incoming Data Analyst at M.S.Hall & Associates
 

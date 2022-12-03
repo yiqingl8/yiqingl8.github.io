@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/TianciZheng/TianciZheng.github.io/main/cleaned_inc5000-2019.csv"
   },
+  "title": "Average Employee Count",
   "height": 400,
   "width": 500,
   "transform": [{"filter": "datum.founded >= 1989"}],
