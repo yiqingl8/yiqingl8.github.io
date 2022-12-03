@@ -9,5 +9,5 @@ weight: 3
 
 Hi I am Yiqing Li,<br>
 
-- MSIM at UIUC
+- MSIM graduate student at UIUC
 
