@@ -1,14 +1,24 @@
-- name: HTML5/CSS3
+- name: Powerbi
   percentage: 90
   level: Expert
   color: danger
 
-- name: Go
+- name: SQL
   percentage: 80
-  level: Medium
-  color:
+  level: Expert
+  color: secondary
 
 - name: Python
   percentage: 70
-  level: Beginner
+  level: Expert
+  color: secondary  
+  
+- name: Tableau
+  percentage: 70
+  level: Advanced
+  color: secondary
+
+  - name: R
+  percentage: 70
+  level: Advanced
   color: secondary
